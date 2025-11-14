@@ -1,41 +1,49 @@
-# Plant Disease Detection
+# 🌿 Week 3 – Final Model Completion (100%)
 
-This project aims to detect plant diseases using a Convolutional Neural Network (CNN). The model is trained on a dataset of various plant diseases and can classify images of plants to identify potential diseases.
+## ✔️ Overview
+This week completes the entire model development pipeline for the Plant Disease Detection system.  
+The work includes:
 
-## Project Structure
+- Transfer Learning using MobileNetV2  
+- Model Training and Fine-Tuning  
+- Confusion Matrix and Classification Report  
+- Manual Image Prediction  
+- Grad-CAM Heatmap + Grad-CAM Overlay  
+- Saving the Final Model  
 
-- **week 3/**: Contains the Jupyter notebook `plant_disease_week3.ipynb` which includes code for data preprocessing, model training, evaluation, and visualization of results.
-- **data/**: This folder is intended to store datasets used for training and validation of the model.
-- **models/**: This folder is intended to store saved model files, such as trained weights or architecture definitions.
-- **requirements.txt**: Lists the Python packages required to run the project, including libraries like TensorFlow, Keras, and any other dependencies.
+---
 
-## Setup Instructions
+## 🔥 1. Transfer Learning (MobileNetV2)
+- Used pretrained **MobileNetV2** as the feature extractor.
+- Added custom classification layers for 7 plant disease classes.
+- Achieved **98–99% validation accuracy**.
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd Plant-disease-detection
-   ```
+---
 
-2. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
+## 📊 2. Model Evaluation
+### Confusion Matrix  
+Generated `confusion_matrix.png` to measure per-class performance.
 
-3. Place your dataset in the `data/` folder.
+### Classification Report  
+Model produces high precision, recall, and F1 scores across all classes.
 
-## Usage
+---
 
-To run the Jupyter notebook for plant disease detection, navigate to the `week 3/` directory and open `plant_disease_week3.ipynb` in Jupyter Notebook or Google Colab.
+## 🌱 3. Manual Test Predictions
+Tested the model on external leaf images (not from the dataset).  
+Saved output in `sample_predictions.png`.  
+Predictions were accurate and consistent.
 
-## Dataset
+---
 
-The dataset used for training and validation is stored in the `data/` folder. Ensure that the dataset is organized correctly for the model to access it.
+## 🔥 4. Grad-CAM Explainability
+Generated:
+- `gradcam_heatmap.png`
+- `gradcam_overlay.png`
 
-## Model
+Grad-CAM highlights the regions of the leaf the model used while predicting the disease.
 
-The model architecture is defined in the Jupyter notebook. It utilizes a CNN for image classification tasks related to plant diseases.
+---
 
-## License
-
-This project is licensed under the MIT License.
+## 📁 Files Included
+This folder includes the final model artifacts, evaluation plots, sample predictions, and explainability visuals.  
