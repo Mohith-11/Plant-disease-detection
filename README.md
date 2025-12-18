@@ -72,7 +72,7 @@ dataset/
 └── valid/
     ├── Apple___Black_rot/
     ├── Apple___healthy/
-    └── ... (same structure as train)
+    └── ...
 ```
 
 ## 🧰 Tech Stack
